@@ -42,7 +42,7 @@ export default function Header() {
       <div className="App">
         <div className="bg-gray-50 flex autolayout rounded-lg py-2 px-3 mb-3">
           <img className="object-cover h-12 w-12" src={emoji} alt="1" />
-                  <Like/>
+                  
           <h1 className="m-1 text-md lg:text-xl text-semibold">Add email to claim additional discount
             <strong> click here</strong></h1>
         </div>
@@ -60,7 +60,7 @@ export default function Header() {
               <div className="bg-white rounded-md shadow-sm">
                 <div className="h-full">
                   <div className="relative overflow-hidden rounded-md shadow-lg cursor-pointer">
-                    <img className="object-cover w-full" src={bg} alt="1" />
+                    <img className="object-cover w-full transition duration-300 hover:scale-105" src={bg} alt="1" />
 
                     <div className="absolute top-0 left-0 px-3 py-4">
                       <div className="flex mt-3">
@@ -70,10 +70,12 @@ export default function Header() {
                       <p className="leading-normal text-gray-100 text-md">Learn more</p>
                     </div>
 
-                    <div className="text-left px-3 py-3 flex justify-between space-x-4">
+                    
+                  </div>
+                  <div className="text-left px-3 py-3 flex justify-between space-x-4">
                       <div className="flex text-2xl">
                         <div className="px-3">
-                          <HeartOutlined />
+                        <Like/>
                         </div>
                         <div className="px-3">
                           <ShareAltOutlined />
@@ -81,7 +83,6 @@ export default function Header() {
                       </div>
                       <button className="bg-black px-5 py-2 text-white text-md rounded-md">AVAIL NOW</button>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
